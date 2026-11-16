@@ -13,7 +13,7 @@ machines_data= [
   ]
 now_time = datetime.now().strftime("%Y-%m-%d %H-%M-%S")
 alert = []
-for i in machines_data:
+for i in machines_data:  
     msg = check_machine(i,now_time)
 if msg:
     alert.append(msg)
